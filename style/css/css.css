@@ -1,0 +1,919 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;   
+} 
+body {
+    background-image: url(bck.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+/* Start Fonts*/
+@font-face {
+    font-family: logoFont;
+    src:url(fonts/Gasgass.woff);
+}
+@font-face {
+    font-family: spanLogoFont;
+    src:url(fonts/RushwellPersonalUseOnly.woff);
+}
+@font-face {
+    font-family: fontWeb;
+    src:url(fonts/Hacen-Saudi-Arabia.woff);
+}
+.login h3 i{
+    transition: all .6s;
+    font-size: 30px;
+}
+.login h3 i:hover {
+    transform: rotate(400deg);
+    color: #84d5ff;
+}
+.login h3 {
+    position: absolute;
+    display: inline-block;
+    font-family: logoFont;
+    cursor: pointer;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #278ea5;
+    top: 15px;
+    left: 2em;
+}
+.login h3 span {
+    font-family: spanLogoFont;   
+}
+.login h3 span:hover {
+    color: #267f3f;
+}
+/*start div login*/
+.login {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    background: #e3f6f5;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+.icon {
+    position: relative;
+    display: inline-block;
+    top: 4px;
+    color: #278ea5;
+    font-size: 30px;
+    left: 19em;
+    cursor: pointer;
+    transition: all .5s;
+    top: 20px;   
+}
+.icon .fa-facebook-square {
+    margin-right: 30px;
+}
+.icon .fa-facebook-square:hover {
+    color: #4267b2;
+    transform: scale(1.2);
+}
+.icon .fa-google {
+    font-size: 25px; 
+    margin-left: 30px;
+    transform: scale(1.2);
+}
+.icon .fa-google:hover {
+    color: #fbbc05;
+    transform: scale(1.2);    
+}
+.icon .fa-youtube:hover {
+    color: red;
+    transform: scale(1.2);   
+}
+.icon .fa-twitter {
+    margin-right: 30px;
+}
+.icon .fa-twitter:hover {
+    color: #2aa9e0;
+    transform: scale(1.2);
+}
+/* star logo2 */
+.login2 {
+    position: absolute;
+    background: #add2c9;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    top: 70px; 
+}
+.search {
+    position: absolute;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #278ea5;
+    top: 5px;
+    left: 83em;
+    color: #fff;
+}
+.search:hover .search-text {
+    width: 170px;
+    padding: 0px 6px;
+    color: #fff;
+}
+.search:hover  {
+    color: #2aa9e0;
+}
+.search-btn {
+    position: relative;
+    top: 10%;
+    right: -17%;
+    width: 5px;
+    height: 40px;
+    color: #fff;
+    float: right;
+    border-radius: 50%;   
+}
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+    transition: .4s;
+    line-height: 20px;
+    width: 0px;
+    font-family: fontWeb;
+    text-align: center;
+}
+.login2 ul {
+    list-style: none;
+
+}
+.login2 ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    letter-spacing: 1;
+    float: left;
+    color: #278ea5;
+    text-align: center;
+    padding: 16px 24px;
+    transition: all .7s;
+    font-family: fontWeb;
+}
+.login2 ul li a:hover {
+    color: #278ea5;
+    opacity: .5;
+    font-size: 19px;
+    transform: scale(.8);
+    font-family: fontWeb;
+}
+.containear {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 83vh;
+    z-index: -2;
+    
+}
+.containear .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 10s linear infinite;
+}
+.containear .slider .slide {
+    position: relative;
+    width: 20%;    
+    height: 100%;
+    float: left;
+}
+.containear .slider .slide .caption {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    transition: .5s;
+}
+.containear .slider .slide .caption h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+    transition: .5s;
+    text-transform: uppercase;
+    font-family: fontweb;
+}
+.containear .slider .slide .caption p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    transition: .5s;
+    text-align: right;
+    font-family: fontweb;
+}
+.containear .slider .slide.slide1 {    
+    position: sticky;
+    background-image: url(et00065784.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px; 
+}
+.containear .slider .slide.slide2 {
+    position: sticky;
+    background-image: url(Gallery.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.containear .slider .slide.slide3 {
+    position: sticky;
+    background-image: url(a7fbc32e.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 53px;
+}
+.containear .slider .slide.slide4 {
+    position: sticky;
+    background-image: url(frozen2.jpg);
+    background-position: top left;
+    background-size: cover;
+    margin-top: 30px; 
+}
+@keyframes animate { 
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    
+    75% {
+        left: -300%;
+    }   
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+/* end div login */
+/* #slider {
+    position: absolute;
+	overflow: hidden;
+    top: 7.5em;
+    height: 550px;
+    box-shadow: 0px 0px 60px 4px #278ea5; 
+}
+#slider figure {
+	position: relative;
+	width: 600%;
+	left: 0px;
+    animation: 25s slider infinite; 
+}
+#slider figure img {
+	width: 20%;
+	float: left;    
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+    }
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+} */
+/* end slider*/
+/* star div logo 2*/
+/* .center {
+    position: relative;
+    display: inline-block;
+    top: 640px;
+    background: -webkit-repeating-linear-gradient;
+    width: 100%;
+    height: 50px;
+    right: 40%;   
+}
+.center h3 i{
+    transition: all .6s;
+    font-size: 30px;
+}
+.center h3 i:hover {
+    transform: rotate(400deg);
+    color: #84d5ff;
+}
+.center h3 {
+    font-family: logoFont;
+    cursor: pointer;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 45em;
+}
+.center h3 span {
+    font-family: logoFont; 
+    transform: all .6s;
+}
+.center h3 span:hover {
+    color: red;
+    transform: rotate(40deg);
+} */
+
+/* end div center*/
+/* ======================== */
+/*star div movies*/
+.movis {
+    position: relative;
+    width: 100%;
+    height: 227vh;
+    z-index: 1
+}
+.color { 
+    background: rgba(0, 0, 0, .5);
+    margin: auto;
+    width: 70%;
+    height: 250vh;
+    margin-top: 5%
+}
+/* ============ move1 ================ */
+.mov1 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 15px;
+    left: 20em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.mov1:before {
+    content: "";
+    width: 200px;
+    height: 262px;
+    position:absolute;
+    background: url(frozen.jpg);
+    z-index: 1;
+}
+.mov1::after {
+    content: "مشاهدة فيلم Frozen II 2019 1080p WEB-DL مترجم";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    visibility: hidden;
+}
+.mov1:hover:after {
+    visibility: visible;
+}
+.mov1:hover:before {
+}
+
+
+/* ============ move 2================ */
+.mov2 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 10px;
+    left: 35em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.mov2:before {
+    content: "";
+    width: 200px;
+    height: 262px;
+    position:absolute;
+    background: url(story.jpg);
+    z-index: 1;
+}
+.mov2::after {
+    content:"مشاهدة فيلم Toy Story 4 2019 1080p BluRay مترجم";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov2:hover:after {
+    visibility: visible;
+}
+.mov2:hover:before {
+}
+
+
+/* ============ move3================ */
+.mov3 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 10px;
+    left: 50em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.mov3:before {
+    content: "";
+    width: 300px;
+    height: 362px;
+    position:absolute;
+    background: url(spies.jpg);
+    z-index: 1;    
+}
+.mov3::after {
+    content: "مشاهدة فيلم Spies Disguise مترجم";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov3:hover:after {
+    visibility: visible;
+}
+
+
+/* ============ move4=========== */
+.mov4 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 10px;
+    left: 65em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.mov4:before {
+    content: "";
+    width: 300px;
+    height: 362px;
+    position:absolute;
+    background: url( Addams.jpg);
+    z-index: 1;    
+}
+.mov4::after {
+    content:  "مشاهدة فيلم The Addams Family 2019 1080p WEBRip مترجم";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov4:hover:after {
+    visibility: visible;
+}
+
+/* ============ move5================ */
+.mov5 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 20em;
+    left: 20em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.mov5:before {
+    content: "";
+    width: 200px;
+    height: 262px;
+    position:absolute;
+    background: url(1582627244012.jpg);
+    transition: all 1s;
+    z-index: 1;
+    background-size: cover;
+        
+}
+.mov5::after {
+    content: "مشاهدة تحميل فيلم مشاهدة فيلم Superman Red";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov5:hover:after {
+    visibility: visible;
+}
+.mov5:hover:before {
+    transform: scale(1.4) rotate(25deg);
+}
+
+
+
+/* ============ move6================ */
+.mov6 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 20em;
+    left: 35em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.mov6:before {
+    content: "";
+    width: 200px;
+    height: 262px;
+    position:absolute;
+    background: url(95167l.jpg);
+    transition: all 1s;
+    z-index: 1;
+    background-size: cover;
+
+}
+.mov6::after {
+    content: "فيلم Made in Abyss Movie 1: Tabidachi no Yoake";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov6:hover:after {
+    visibility: visible;
+}
+.mov6:hover:before {
+    transform: scale(1.4) rotate(25deg);
+}
+
+/* ============ move7================ */
+.mov7 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 20em;
+    left: 50em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.mov7:before {
+    content: "";
+    width: 300px;
+    height: 362px;
+    position:absolute;
+    background: url(compressed.jpg);
+    transition: all 1s;
+    z-index: 1; 
+    background-size: contain;
+}
+.mov7::after {
+    content: "فيلم How to Train Your Dragon Homecoming 2019 DVDRip";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov7:hover:after {
+    visibility: visible;
+}
+.mov7:hover:before {
+    transform: scale(1.4) rotate(25deg);
+}
+
+
+
+ /* ============ move8================ */
+.mov8 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 20em;
+    left: 65em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.mov8:before {
+    content: "";
+    width: 300px;
+    height: 362px;
+    position:absolute;
+    background: url(Arctic.jpg);
+    transition: all 1s;
+    z-index: 1;
+    background-size: cover;
+    
+}
+.mov8::after {
+    content: "فيلم Arctic Dogs 2019 Web-dl مترجم";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov8:hover:after {
+    visibility: visible;
+}
+.mov8:hover:before {
+    transform: scale(1.4) rotate(25deg);
+}
+
+
+
+
+/* ============ move5================ */
+.mov9 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 40em;
+    left: 20em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.mov9:before {
+    content: "";
+    width: 200px;
+    height: 262px;
+    position:absolute;
+    background: url(Teend.jpg);
+    transition: all 1s;
+    z-index: 1;
+    background-size: contain
+        
+}
+.mov9::after {
+    content: "فيلم Teen Titans Go! Vs. Teen Titans 2019 Web-dl مترجم";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov9:hover:after {
+    visibility: visible;
+}
+.mov9:hover:before {
+    transform: scale(1.4) rotate(25deg);
+}
+
+
+
+/* ============ move6================ */
+.mov10 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 40em;
+    left: 35em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.mov10:before {
+    content: "";
+    width: 200px;
+    height: 262px;
+    position:absolute;
+    background: url(Wonder.jpg);
+    transition: all 1s;
+    z-index: 1;
+    background-size: cover;
+
+}
+.mov10::after {
+    content: "فيلم Wonder Woman: Bloodlines 2019 Web-dl مترجم";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov10:hover:after {
+    visibility: visible;
+}
+.mov10:hover:before {
+    transform: scale(1.4) rotate(25deg);
+}
+
+/* ============ move7================ */
+.mov11 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 40em;
+    left: 50em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.mov11:before {
+    content: "";
+    width: 300px;
+    height: 362px;
+    position:absolute;
+    background: url(I-Lost-My.jpg);
+    transition: all 1s;
+    z-index: 1; 
+    background-size: contain;
+   
+    
+}
+.mov11::after {
+    content: "فيلم I Lost My Body 2019 Web-dl مترجم";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov11:hover:after {
+    visibility: visible;
+}
+.mov11:hover:before {
+    transform: scale(1.4) rotate(25deg);
+}
+
+
+
+ /* ============ move8================ */
+.mov12 {
+    width: 200px;
+    height: 262px;
+    position: absolute;
+    top: 40em;
+    left: 65em;
+    border-radius: 23px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.mov12:before {
+    content: "";
+    width: 300px;
+    height: 362px;
+    position:absolute;
+    background: url(00_AL_.jpg);
+    transition: all 1s;
+    z-index: 1;
+    background-size: contain;
+    
+}
+.mov12::after {
+    content: "فيلم One Piece Movie 14: Stampede ";
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    background: #262E3A;
+    opacity: .8;
+    font-family: fontweb;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    transition: all .6s;
+    visibility: hidden;
+}
+.mov12:hover:after {
+    visibility: visible;
+}
+.mov12:hover:before {
+    transform: scale(1.4) rotate(25deg);
+}
+/* end div movies 3*/
+
+
+
+
+
+.hvr-bounce-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
